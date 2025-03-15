@@ -1,9 +1,9 @@
 # Distinguishing Mental Health Categories on Reddit Using NLP
 
-## 📌 Project Overview
+##  Project Overview
 This project applies Natural Language Processing (NLP) to classify Reddit posts into different mental health categories, such as **anxiety, depression, and general well-being**. By analyzing linguistic patterns, the goal is to enhance early detection of mental health concerns and contribute to research in this field.
 
-## 🚀 Problem Statement
+##  Problem Statement
 With the increasing discussions on mental health platforms like Reddit, it becomes essential to systematically analyze and categorize these conversations. The challenges include:
 
 - **Overlapping linguistic features** between different mental health conditions.
@@ -14,17 +14,17 @@ This project tackles these issues using an advanced **NLP-based classification p
 
 ---
 
-## 🛠️ Approach
+##  Approach
 The project follows a structured NLP pipeline consisting of:
 
-### 1️⃣ **Data Collection**
+### 1. **Data Collection**
 - Reddit’s **PRAW API** was used to collect posts from mental health-related subreddits:
   - `r/depression`
   - `r/Anxiety`
   - `r/SuicideWatch`
   - General subreddit (`r/CasualConversation`) as a control group.
 
-### 2️⃣ **Data Preprocessing**
+### 2. **Data Preprocessing**
 To clean and prepare the text data for analysis, the following steps were performed:
 - **Tokenization**: Breaking text into words using `nltk`.
 - **Lowercasing**: Converting all text to lowercase.
@@ -32,13 +32,13 @@ To clean and prepare the text data for analysis, the following steps were perfor
 - **Lemmatization/Stemming**: Reducing words to their root form (e.g., "running" → "run").
 - **Text Cleaning**: Removing special characters and unnecessary punctuation using `re.sub()`.
 
-### 3️⃣ **Feature Engineering**
+### 3. **Feature Engineering**
 To represent text in a numerical format that machine learning models can process, we used:
 - **TF-IDF (Term Frequency-Inverse Document Frequency)**: Assigns importance to words based on their frequency.
 - **Bag-of-Words (CountVectorizer)**: Converts text into word occurrence matrices.
 - **Word Embeddings**: Capturing semantic relationships between words.
 
-### 4️⃣ **Model Training & Evaluation**
+### 4. **Model Training & Evaluation**
 We implemented various machine learning models for classification:
 - **Baseline Models:**
   - Most Frequent Label Classifier
@@ -50,7 +50,7 @@ We implemented various machine learning models for classification:
 **Evaluation Metrics:**
 - **Accuracy, Precision, Recall, and F1-score** were used to measure performance.
 
-### 5️⃣ **Results & Insights**
+### 5. **Results & Insights**
 - The **LSTM model** outperformed traditional classifiers, demonstrating superior performance in distinguishing mental health categories.
 - Exploratory Data Analysis (EDA) revealed insightful linguistic differences between mental health subreddits.
 - The framework provides a foundation for **automated mental health monitoring and intervention**.
@@ -74,16 +74,16 @@ We implemented various machine learning models for classification:
    ```    
 2. **Run the Jupyter notebook** for data processing and model training.
 
-## 🔮 Future Scope
+##  Future Scope
 - Expanding the dataset to include more mental health-related subreddits.
 - Using **transformer-based models (BERT, RoBERTa)** for improved text representation.
 - Developing a real-time monitoring tool for mental health professionals.
 
-## 📝 Acknowledgments
+##  Acknowledgments
 This project is part of my course **CIS 600: Applied Natural Language Processing** .
 
 ---
-🚀 **Author:** Harshitha Kancher  
+ **Author:** K.Harshitha Reddy 
 📧 [Email](mailto:harshithareddyk2002@gmail.com) | 🔗 [LinkedIn](https://www.linkedin.com/in/harshithareddyk)  
 
 ---
