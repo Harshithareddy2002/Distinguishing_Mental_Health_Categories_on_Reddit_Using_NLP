@@ -61,7 +61,7 @@ We implemented various machine learning models for classification:
 ```
 📂 Distinguishing_Mental_Health_NLP  
 │── 📂 data               # Preprocessed and raw datasets  
-│── 📂 notebooks          # Jupyter notebooks for EDA and model training  
+│── 📂 Python file        # Jupyter notebooks for EDA and model training  
 │── 📄 README.md          # Project overview  
 ```
 
@@ -69,7 +69,7 @@ We implemented various machine learning models for classification:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/Distinguishing_Mental_Health_NLP.git  
+   git clone https://github.com/yourusername/mental_Health_NLP.git  
    cd Distinguishing_Mental_Health_NLP  
    ```    
 2. **Run the Jupyter notebook** for data processing and model training.
